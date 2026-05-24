@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wama Consultant - Expert consulting services in business strategy, marketing, and operations.">
+    <meta name="theme-color" content="#333">
+    <title>Wama Consultant - Business Consulting Services</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #333 0%, #555 100%);
+            color: #00FF00;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .logo {
+            max-width: 150px;
+            height: auto;
+            margin: 10px 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        nav {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        nav a:hover,
+        nav a:focus {
+            background-color: #00FF00;
+            color: #333;
+            text-decoration: underline;
+            outline: 2px solid #00FF00;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            padding: 30px;
+            background: white;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 15px;
+            border-bottom: 3px solid #00FF00;
+            padding-bottom: 10px;
+            font-size: 1.8rem;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover,
+        a:focus {
+            color: #004499;
+            text-decoration: underline;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* Form styles */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="tel"]:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #00FF00;
+            box-shadow: 0 0 5px rgba(0, 255, 0, 0.3);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .fee-info {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #fff3cd;
+            border-left: 4px solid #ff4500;
+            border-radius: 4px;
+            font-weight: bold;
+            color: #856404;
+        }
+
+        .submit-btn {
+            background-color: #333;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover,
+        .submit-btn:focus {
+            background-color: #00FF00;
+            color: #333;
+            outline: 2px solid #333;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            section {
+                padding: 20px;
+                margin: 15px 0;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            nav a {
+                padding: 8px 12px;
+                font-size: 0.9rem;
+            }
+
+            section {
+                padding: 15px;
+            }
+        }
+
+        /* Accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #00FF00;
+            color: #333;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 100;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<header role="banner">
+    <svg class="logo" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg" aria-label="Wama Consultant Logo">
+        <circle cx="75" cy="75" r="70" fill="#00FF00"/>
+        <text x="75" y="85" font-size="36" font-weight="bold" text-anchor="middle" fill="#333">WC</text>
+    </svg>
+    <h1>Wama Consultant</h1>
+    <nav role="navigation" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+        <a href="#links">Important Links</a>
+        <a href="#registration">Business Registration</a>
+    </nav>
+</header>
+
+<main id="main-content">
+
+<section id="services" role="region" aria-labelledby="services-heading">
+    <h2 id="services-heading">Our Services</h2>
+    <p>We offer expert consulting services in various fields, including:</p>
+    <ul>
+        <li>Business Strategy & Planning</li>
+        <li>Marketing & Brand Development</li>
+        <li>Operations Management</li>
+        <li>Business Registration & Compliance</li>
+    </ul>
+</section>
+
+<section id="about" role="region" aria-labelledby="about-heading">
+    <h2 id="about-heading">About Us</h2>
+    <p>At Wama Consultant, we are dedicated to helping businesses achieve their goals through tailored consulting solutions. With years of experience serving clients across Papua New Guinea, we understand the unique challenges and opportunities in the local business landscape.</p>
+</section>
+
+<section id="contact" role="region" aria-labelledby="contact-heading">
+    <h2 id="contact-heading">Contact Us</h2>
+    <p>Get in touch with us for more information:</p>
+    <p><strong>Email:</strong> <a href="mailto:98wservice@gmail.com">98wservice@gmail.com</a></p>
+    <p><strong>Phone:</strong> <a href="tel:+67531940819">(+675) 3194-0819</a></p>
+</section>
+
+<section id="links" role="region" aria-labelledby="links-heading">
+    <h2 id="links-heading">Important Links</h2>
+    <p>For more information, you can visit our business partners:</p>
+    <ul>
+        <li><a href="https://www.ipa.gov.pg/" target="_blank" rel="noopener noreferrer">Investment Promotion Authority (IPA)</a></li>
+        <li><a href="https://irc.gov.pg/" target="_blank" rel="noopener noreferrer">Internal Revenue Commission (IRC)</a></li>
+    </ul>
+</section>
+
+<section id="registration" role="region" aria-labelledby="registration-heading">
+    <h2 id="registration-heading">Business Registration</h2>
+    <p>If you are interested in registering your business, please fill out the form below:</p>
+    <form id="registration-form" method="POST" action="https://formspree.io/f/xjkgzvbv">
+        <div class="form-group">
+            <label for="name">Full Name: <span aria-label="required">*</span></label>
+            <input type="text" id="name" name="name" required aria-required="true">
+        </div>
+        <div class="form-group">
+            <label for="business-name">Name of the proposed business/company/association/business group or foreign enterprise: <span aria-label="required">*</span></label>
+            <input type="text" id="business-name" name="business-name" required aria-required="true">
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address: <span aria-label="required">*</span></label>
+            <input type="email" id="email" name="email" required aria-required="true">
+        </div>
+        <div class="form-group">
+            <label for="contact-details">Contact Details: <span aria-label="required">*</span></label>
+            <input type="tel" id="contact-details" name="contact-details" required aria-required="true">
+        </div>
+        <div class="form-group">
+            <label for="message">Additional Information:</label>
+            <textarea id="message" name="message" aria-describedby="fee-info"></textarea>
+        </div>
+        <div class="fee-info" id="fee-info">
+            📌 <strong>Note:</strong> The fee for business registration is K250.
+        </div>
+        <button type="submit" class="submit-btn">Submit Registration</button>
+    </form>
+</section>
+
+</main>
+
+<footer role="contentinfo">
+    <p>&copy; 2026 Wama Consultant. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
